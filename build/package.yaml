@@ -16,9 +16,7 @@ executables:
     source-dirs: app-cmd
 extra-source-files:
 - package.yaml
-- changelog.md
 - readme.md
-- stack.yaml
 ghc-options: -Wall
 author: Phil de Joux
 maintainer: phil.dejoux@blockscope.com

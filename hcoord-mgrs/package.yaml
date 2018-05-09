@@ -31,7 +31,7 @@ tests:
   hcoord-mgrs-test:
     dependencies:
     - base
-    - HUnit >= 1.2 && < 1.6
+    - HUnit
     - hcoord
     - hcoord-utm
     - mtl

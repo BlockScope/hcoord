@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: af9278f444992d11c3bb6fb6fba149140605ee9db73993ab10738e9e19ba78d8
+-- hash: 3272cfb0b454542c219644d7e5def46249b0d9a9b636239414d9496b8fd4a243
 
 name:           hcoord-osgb
 version:        1.0.0.0
@@ -54,7 +54,7 @@ test-suite hcoord-osgb-test
       src
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      HUnit >=1.2 && <1.6
+      HUnit
     , base
     , data-default
     , hcoord

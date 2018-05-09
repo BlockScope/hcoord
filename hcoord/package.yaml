@@ -33,7 +33,7 @@ tests:
   hcoord-test:
     dependencies:
     - base
-    - HUnit >= 1.2 && < 1.6
+    - HUnit
     - mtl
     - ieee754
     - data-default

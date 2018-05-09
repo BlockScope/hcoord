@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 75f91822e7f6b6160f04a35fe6685272f39d70e01ec9bbdc58c0cacee523958d
+-- hash: 261733a444c736923393135eef25dbfbc75db1293378be882159ab4c6619ceb0
 
 name:           hcoord-irish
 version:        1.0.0.0
@@ -54,7 +54,7 @@ test-suite hcoord-irish-test
       src
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      HUnit >=1.2 && <1.6
+      HUnit
     , base
     , data-default
     , hcoord

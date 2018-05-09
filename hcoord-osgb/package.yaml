@@ -29,7 +29,7 @@ tests:
   hcoord-osgb-test:
     dependencies:
     - base
-    - HUnit >= 1.2 && < 1.6
+    - HUnit
     - hcoord
     - mtl
     - ieee754

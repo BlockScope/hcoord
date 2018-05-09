@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: dcb01220c1f8110dd7421d184dc5484dccb16e319474a9cdaa3afa0fb4f5fef6
+-- hash: 134f9d90dcda56a744aac8ca0cc6f0269b29108e2ebe650acb7dd07752d147cc
 
 name:           hcoord-mgrs
 version:        1.0.0.0
@@ -56,7 +56,7 @@ test-suite hcoord-mgrs-test
       src
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      HUnit >=1.2 && <1.6
+      HUnit
     , base
     , data-default
     , hcoord

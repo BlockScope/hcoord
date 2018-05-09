@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c9aaeee1067bd5574f302a50d26c72cd1a46615f49636b9844ba3e3f14111b30
+-- hash: fe3758a5e6f6542346816b3f0093fcb72dd4561f2d952927df9fa14dcee4a6a6
 
 name:           hcoord-utm
 version:        1.0.0.0
@@ -54,7 +54,7 @@ test-suite hcoord-utm-test
       src
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      HUnit >=1.2 && <1.6
+      HUnit
     , base
     , data-default
     , hcoord
