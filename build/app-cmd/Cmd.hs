@@ -40,10 +40,7 @@ testPkgs =
 lintRule :: String -> Rules ()
 lintRule s =
     phony ("lint-" ++ s) $
-        cmd
-            (Cwd s) 
-            Shell
-            (cmdTestFor s ++ ":hlint-test")
+        cmd Shell (cmdTestFor s ++ ":hlint-test")
 
 lintRules :: Rules ()
 lintRules = do
@@ -56,10 +53,7 @@ lintRules = do
 testRule :: (Pkg, Test) -> Rules ()
 testRule (pkg, test) =
     phony ("test-" ++ pkg) $
-        cmd
-            (Cwd pkg)
-            Shell
-            (cmdTestFor $ pkg ++ ":" ++ test)
+        cmd Shell (cmdTestFor $ pkg ++ ":" ++ test)
 
 testRules :: Rules ()
 testRules = do
@@ -69,7 +63,7 @@ testRules = do
 buildRule :: Pkg -> Rules ()
 buildRule s =
     phony s $
-        cmd (Cwd s) Shell cmdBuild
+        cmd Shell cmdBuild
 
 buildRules :: Rules ()
 buildRules = do
