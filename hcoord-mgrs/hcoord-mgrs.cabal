@@ -1,8 +1,8 @@
--- This file has been generated from package.yaml by hpack version 0.20.0.
+-- This file has been generated from package.yaml by hpack version 0.28.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7f62f3d8786b97616d35fb6f9dd54cdf7e1b4330897f88e6eb5645308e56d8cc
+-- hash: dcb01220c1f8110dd7421d184dc5484dccb16e319474a9cdaa3afa0fb4f5fef6
 
 name:           hcoord-mgrs
 version:        1.0.0.0
@@ -18,17 +18,19 @@ license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
 cabal-version:  >= 1.10
-
 extra-source-files:
     package.yaml
     README.md
-    stack.yaml
 
 source-repository head
   type: git
   location: https://github.com/https://github.com/danfran/hcoord
 
 library
+  exposed-modules:
+      MGRSRef
+  other-modules:
+      Paths_hcoord_mgrs
   hs-source-dirs:
       src
   ghc-options: -Wall
@@ -38,15 +40,17 @@ library
     , hcoord-utm
     , mtl
     , regex-pcre
-  exposed-modules:
-      MGRSRef
-  other-modules:
-      Paths_hcoord_mgrs
   default-language: Haskell2010
 
 test-suite hcoord-mgrs-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
+  other-modules:
+      Equals
+      HUnitExtensions
+      MGRSRef.Tests
+      MGRSRef
+      Paths_hcoord_mgrs
   hs-source-dirs:
       test
       src
@@ -60,23 +64,17 @@ test-suite hcoord-mgrs-test
     , ieee754
     , mtl
     , regex-pcre
-  other-modules:
-      Equals
-      HUnitExtensions
-      MGRSRef.Tests
-      MGRSRef
-      Paths_hcoord_mgrs
   default-language: Haskell2010
 
 test-suite hlint-test
   type: exitcode-stdio-1.0
   main-is: HLint.hs
+  other-modules:
+      Paths_hcoord_mgrs
   hs-source-dirs:
       hlint
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base
     , hlint
-  other-modules:
-      Paths_hcoord_mgrs
   default-language: Haskell2010

@@ -1,8 +1,8 @@
--- This file has been generated from package.yaml by hpack version 0.20.0.
+-- This file has been generated from package.yaml by hpack version 0.28.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 93491cde92f1006daefc48fc571a4e29eccc0b4314065b8138e7e1a2254ef961
+-- hash: c9aaeee1067bd5574f302a50d26c72cd1a46615f49636b9844ba3e3f14111b30
 
 name:           hcoord-utm
 version:        1.0.0.0
@@ -18,17 +18,19 @@ license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
 cabal-version:  >= 1.10
-
 extra-source-files:
     package.yaml
     README.md
-    stack.yaml
 
 source-repository head
   type: git
   location: https://github.com/https://github.com/danfran/hcoord
 
 library
+  exposed-modules:
+      UTMRef
+  other-modules:
+      Paths_hcoord_utm
   hs-source-dirs:
       src
   ghc-options: -Wall
@@ -36,15 +38,17 @@ library
       base >=4 && <5
     , hcoord
     , mtl
-  exposed-modules:
-      UTMRef
-  other-modules:
-      Paths_hcoord_utm
   default-language: Haskell2010
 
 test-suite hcoord-utm-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
+  other-modules:
+      Equals
+      HUnitExtensions
+      UTMRef.Tests
+      UTMRef
+      Paths_hcoord_utm
   hs-source-dirs:
       test
       src
@@ -56,23 +60,17 @@ test-suite hcoord-utm-test
     , hcoord
     , ieee754
     , mtl
-  other-modules:
-      Equals
-      HUnitExtensions
-      UTMRef.Tests
-      UTMRef
-      Paths_hcoord_utm
   default-language: Haskell2010
 
 test-suite hlint-test
   type: exitcode-stdio-1.0
   main-is: HLint.hs
+  other-modules:
+      Paths_hcoord_utm
   hs-source-dirs:
       hlint
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base
     , hlint
-  other-modules:
-      Paths_hcoord_utm
   default-language: Haskell2010

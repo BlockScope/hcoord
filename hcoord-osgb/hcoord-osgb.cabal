@@ -1,8 +1,8 @@
--- This file has been generated from package.yaml by hpack version 0.20.0.
+-- This file has been generated from package.yaml by hpack version 0.28.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 9e7a248c0f2a72b85365e84d3e792518d822d26ff09e9fc6882fa23d85630b89
+-- hash: af9278f444992d11c3bb6fb6fba149140605ee9db73993ab10738e9e19ba78d8
 
 name:           hcoord-osgb
 version:        1.0.0.0
@@ -18,17 +18,19 @@ license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
 cabal-version:  >= 1.10
-
 extra-source-files:
     package.yaml
     README.md
-    stack.yaml
 
 source-repository head
   type: git
   location: https://github.com/https://github.com/danfran/hcoord
 
 library
+  exposed-modules:
+      OSRef
+  other-modules:
+      Paths_hcoord_osgb
   hs-source-dirs:
       src
   ghc-options: -Wall
@@ -36,15 +38,17 @@ library
       base >=4 && <5
     , hcoord
     , mtl
-  exposed-modules:
-      OSRef
-  other-modules:
-      Paths_hcoord_osgb
   default-language: Haskell2010
 
 test-suite hcoord-osgb-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
+  other-modules:
+      Equals
+      HUnitExtensions
+      OSRef.Tests
+      OSRef
+      Paths_hcoord_osgb
   hs-source-dirs:
       test
       src
@@ -56,23 +60,17 @@ test-suite hcoord-osgb-test
     , hcoord
     , ieee754
     , mtl
-  other-modules:
-      Equals
-      HUnitExtensions
-      OSRef.Tests
-      OSRef
-      Paths_hcoord_osgb
   default-language: Haskell2010
 
 test-suite hlint-test
   type: exitcode-stdio-1.0
   main-is: HLint.hs
+  other-modules:
+      Paths_hcoord_osgb
   hs-source-dirs:
       hlint
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base
     , hlint
-  other-modules:
-      Paths_hcoord_osgb
   default-language: Haskell2010

@@ -1,0 +1,7 @@
+resolver: lts-11.7
+packages:
+- hcoord
+- hcoord-utm
+- hcoord-irish
+- hcoord-mgrs
+- hcoord-osgb
