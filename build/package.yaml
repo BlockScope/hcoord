@@ -4,7 +4,7 @@
 executables:
   build-hcoord:
     dependencies:
-    - base
+    - base >=4 && <5
     - ansi-terminal
     - shake
     - time
