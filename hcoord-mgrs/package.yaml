@@ -31,7 +31,7 @@ tested-with: GHC == 8.2.2
 tests:
   hcoord-mgrs-test:
     dependencies:
-    - base
+    - base >=4 && <5
     - HUnit
     - hcoord
     - hcoord-utm
@@ -49,7 +49,7 @@ tests:
     - src
   hlint-test:
     dependencies:
-    - base
+    - base >=4 && <5
     - hlint
     ghc-options:
     - -threaded
