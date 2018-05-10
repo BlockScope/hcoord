@@ -2,7 +2,7 @@ module Cmd (buildRules, testRules, lintRules) where
 
 import Development.Shake
     ( Rules
-    , CmdOption(Shell, Cwd)
+    , CmdOption(Shell)
     , phony
     , cmd
     , need

@@ -12,7 +12,7 @@ allRules = do
     Target.testRules
 
 buildRules :: Rules ()
-buildRules = do
+buildRules =
     Cmd.buildRules
 
 testRules :: Rules ()
