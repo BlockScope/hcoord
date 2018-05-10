@@ -10,9 +10,9 @@ packages/
 ideaHaskellLib/
 /JAVA/
 /cabal.config
-
 *.lock
-
 *.database
-
 __shake-build/build-hcoord
+dist-newstyle
+.ghc.*
+.stack2cabal
