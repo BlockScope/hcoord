@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7fe3944e75250333ef92066d5b3c58e7a8b8375f24f48d68868ec530301b46aa
+-- hash: ce92db7f07524a12d4cb41315cbb1196b5594a5e22f6e3e002785ff5f9fc2dff
 
 name:           hcoord-mgrs
 version:        2.0.0
@@ -10,7 +10,7 @@ synopsis:       Short synopsis.
 description:    Longer description.
 category:       geography
 homepage:       https://github.com/danfran/hcoord#readme
-bug-reports:    https://github.com/https://github.com/danfran/hcoord/issues
+bug-reports:    https://github.com/danfran/hcoord/issues
 author:         Daniele Francesconi
 maintainer:     dfrancesconi12@gmail.com
 copyright:      copyleft
@@ -25,7 +25,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/https://github.com/danfran/hcoord
+  location: https://github.com/danfran/hcoord
 
 library
   exposed-modules:

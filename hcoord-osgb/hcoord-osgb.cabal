@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 917461afcc81f9817414b843766ab89df07c843ce1c2efc840896a1530ac0206
+-- hash: 3a30920cb4e5cf93cfec1d0ee208ad590683089ca267fa5327942327661dd788
 
 name:           hcoord-osgb
 version:        2.0.0
@@ -10,7 +10,7 @@ synopsis:       Short synopsis.
 description:    Longer description.
 category:       geography
 homepage:       https://github.com/danfran/hcoord#readme
-bug-reports:    https://github.com/https://github.com/danfran/hcoord/issues
+bug-reports:    https://github.com/danfran/hcoord/issues
 author:         Daniele Francesconi
 maintainer:     dfrancesconi12@gmail.com
 copyright:      copyleft
@@ -25,7 +25,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/https://github.com/danfran/hcoord
+  location: https://github.com/danfran/hcoord
 
 library
   exposed-modules:

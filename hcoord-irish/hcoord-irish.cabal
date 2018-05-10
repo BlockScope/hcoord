@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 109b1bbbf3755e9c7c8593e631e7f80296fcf5127d08d20104e330d306442499
+-- hash: 9845c32642daea0345b8dde70ee81e84436084d2ff79c200230325392fa0cbfc
 
 name:           hcoord-irish
 version:        2.0.0
@@ -10,7 +10,7 @@ synopsis:       Short synopsis.
 description:    Longer description.
 category:       geography
 homepage:       https://github.com/danfran/hcoord#readme
-bug-reports:    https://github.com/https://github.com/danfran/hcoord/issues
+bug-reports:    https://github.com/danfran/hcoord/issues
 author:         Daniele Francesconi
 maintainer:     dfrancesconi12@gmail.com
 copyright:      copyleft
@@ -25,7 +25,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/https://github.com/danfran/hcoord
+  location: https://github.com/danfran/hcoord
 
 library
   exposed-modules:

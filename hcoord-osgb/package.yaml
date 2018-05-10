@@ -19,12 +19,11 @@ maintainer: dfrancesconi12@gmail.com
 name: hcoord-osgb
 synopsis: Short synopsis.
 description: Longer description.
-homepage: https://github.com/danfran/hcoord#readme
 category: geography
 license: BSD3
 license-file: LICENSE
 copyright: copyleft
-github: https://github.com/danfran/hcoord
+github: danfran/hcoord
 tested-with: GHC == 8.2.2
 tests:
   hcoord-osgb-test:
