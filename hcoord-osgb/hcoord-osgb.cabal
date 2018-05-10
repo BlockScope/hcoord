@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 3272cfb0b454542c219644d7e5def46249b0d9a9b636239414d9496b8fd4a243
+-- hash: 83c90f7ee6d843721cb4e8755830ed004ae7dbaaa90d6e9252cf8a2516bd8678
 
 name:           hcoord-osgb
 version:        1.0.0.0
@@ -16,6 +16,7 @@ maintainer:     dfrancesconi12@gmail.com
 copyright:      copyleft
 license:        BSD3
 license-file:   LICENSE
+tested-with:    GHC == 8.2.2
 build-type:     Simple
 cabal-version:  >= 1.10
 extra-source-files:

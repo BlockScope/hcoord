@@ -27,6 +27,7 @@ category: Build
 license: BSD3
 license-file: LICENSE.md
 github: danfran/hcoord/build
+tested-with: GHC == 8.2.2
 tests:
   hlint:
     dependencies:

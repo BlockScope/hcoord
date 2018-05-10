@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 134f9d90dcda56a744aac8ca0cc6f0269b29108e2ebe650acb7dd07752d147cc
+-- hash: 38576fbe5fd31039ee3dc3e255c3db9a87f98aad86b9043480561e0222ffbb94
 
 name:           hcoord-mgrs
 version:        1.0.0.0
@@ -16,6 +16,7 @@ maintainer:     dfrancesconi12@gmail.com
 copyright:      copyleft
 license:        BSD3
 license-file:   LICENSE
+tested-with:    GHC == 8.2.2
 build-type:     Simple
 cabal-version:  >= 1.10
 extra-source-files:

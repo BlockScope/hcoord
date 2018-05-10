@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 261733a444c736923393135eef25dbfbc75db1293378be882159ab4c6619ceb0
+-- hash: 22b1cc7787a89596e85a1f835211ddb3e5f9580777c4163afc358f0f602908f0
 
 name:           hcoord-irish
 version:        1.0.0.0
@@ -16,6 +16,7 @@ maintainer:     dfrancesconi12@gmail.com
 copyright:      copyleft
 license:        BSD3
 license-file:   LICENSE
+tested-with:    GHC == 8.2.2
 build-type:     Simple
 cabal-version:  >= 1.10
 extra-source-files:

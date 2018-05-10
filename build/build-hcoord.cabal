@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a88bda549100487dcaa8b0f896596ad53772680c98f14a81eb4a7f6188371ca1
+-- hash: 2e52c428a71e3abd0e9d26f5e87101ff5f54d9dbe4bd9d5691e4b2c0b38e3bc3
 
 name:           build-hcoord
 version:        0.1.0
@@ -15,6 +15,7 @@ author:         Phil de Joux
 maintainer:     phil.dejoux@blockscope.com
 license:        BSD3
 license-file:   LICENSE.md
+tested-with:    GHC == 8.2.2
 build-type:     Simple
 cabal-version:  >= 1.10
 extra-source-files:

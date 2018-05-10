@@ -1,0 +1,6 @@
+packages: build/
+          hcoord/
+          hcoord-utm/
+          hcoord-irish/
+          hcoord-mgrs/
+          hcoord-osgb/

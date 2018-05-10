@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 8a1793e65e1626ab179305fd0aa84678e6fe25c21255b4b3d3a44484c2db868c
+-- hash: 01b1d15fb69547b60d7019821a73851fb71e18a964f3c8dc72178b11a7ca7328
 
 name:           hcoord
 version:        1.0.0.0
@@ -16,6 +16,7 @@ maintainer:     dfrancesconi12@gmail.com
 copyright:      copyleft
 license:        BSD3
 license-file:   LICENSE
+tested-with:    GHC == 8.2.2
 build-type:     Simple
 cabal-version:  >= 1.10
 extra-source-files:
