@@ -19,8 +19,8 @@ library:
 author: Daniele Francesconi
 maintainer: dfrancesconi12@gmail.com
 name: hcoord-mgrs
-synopsis: Easily convert between latitude/longitude, UTM and OSGB.
-description: Please see README.md
+synopsis: Short synopsis.
+description: Longer description.
 homepage: https://github.com/danfran/hcoord#readme
 category: geography
 license: BSD3
