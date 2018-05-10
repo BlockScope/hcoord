@@ -2,12 +2,12 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 83c90f7ee6d843721cb4e8755830ed004ae7dbaaa90d6e9252cf8a2516bd8678
+-- hash: 917461afcc81f9817414b843766ab89df07c843ce1c2efc840896a1530ac0206
 
 name:           hcoord-osgb
-version:        1.0.0.0
-synopsis:       Easily convert between latitude/longitude, UTM and OSGB.
-description:    Please see README.md
+version:        2.0.0
+synopsis:       Short synopsis.
+description:    Longer description.
 category:       geography
 homepage:       https://github.com/danfran/hcoord#readme
 bug-reports:    https://github.com/https://github.com/danfran/hcoord/issues
@@ -56,7 +56,7 @@ test-suite hcoord-osgb-test
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       HUnit
-    , base
+    , base >=4 && <5
     , data-default
     , hcoord
     , ieee754
@@ -72,6 +72,6 @@ test-suite hlint-test
       hlint
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base
+      base >=4 && <5
     , hlint
   default-language: Haskell2010

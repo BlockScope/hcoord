@@ -2,10 +2,10 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 2e52c428a71e3abd0e9d26f5e87101ff5f54d9dbe4bd9d5691e4b2c0b38e3bc3
+-- hash: c35796880e1cda411c33991a2846b49536728cebda4f5297a5b097dbd3ba0995
 
 name:           build-hcoord
-version:        0.1.0
+version:        2.0.0
 synopsis:       A shake build of hcoord.
 description:    Builds the hcoord and hcoord-* packages.
 category:       Build
@@ -29,30 +29,30 @@ source-repository head
 
 executable build-hcoord
   main-is: Main.hs
-  hs-source-dirs:
-      app-cmd
-  ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      ansi-terminal
-    , base
-    , shake
-    , time
   other-modules:
       Cmd
       Driver
       Target
       Paths_build_hcoord
+  hs-source-dirs:
+      app-cmd
+  ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      ansi-terminal
+    , base >=4 && <5
+    , shake
+    , time
   default-language: Haskell2010
 
 test-suite hlint
   type: exitcode-stdio-1.0
   main-is: HLint.hs
+  other-modules:
+      Paths_build_hcoord
   hs-source-dirs:
       test-suite-hlint
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base
+      base >=4 && <5
     , hlint
-  other-modules:
-      Paths_build_hcoord
   default-language: Haskell2010
