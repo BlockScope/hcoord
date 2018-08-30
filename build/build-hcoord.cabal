@@ -1,8 +1,10 @@
--- This file has been generated from package.yaml by hpack version 0.28.2.
+cabal-version: >= 1.10
+
+-- This file has been generated from package.yaml by hpack version 0.29.6.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c35796880e1cda411c33991a2846b49536728cebda4f5297a5b097dbd3ba0995
+-- hash: b99f63601dbcfe3fd72342da6e39d19ad4cbf0f8a1c9f5df2601f8bb0727abb6
 
 name:           build-hcoord
 version:        2.0.0
@@ -17,7 +19,6 @@ license:        BSD3
 license-file:   LICENSE.md
 tested-with:    GHC == 8.2.2
 build-type:     Simple
-cabal-version:  >= 1.10
 extra-source-files:
     package.yaml
     readme.md

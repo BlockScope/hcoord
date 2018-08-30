@@ -3,7 +3,7 @@
 cabal.sandbox.config
 dist/
 **/*.iml
-.stack-work/
+.stack-work*
 x86_64-osx-ghc-*
 add-source-timestamps
 packages/
@@ -12,7 +12,7 @@ ideaHaskellLib/
 /cabal.config
 *.lock
 *.database
-__shake-build/build-hcoord
+__shake-build*
 dist-newstyle
 .ghc.*
 .stack2cabal

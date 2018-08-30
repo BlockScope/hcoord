@@ -1,11 +1,11 @@
--- This file has been generated from package.yaml by hpack version 0.28.2.
+-- This file has been generated from package.dhall by hpack version 0.28.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 9845c32642daea0345b8dde70ee81e84436084d2ff79c200230325392fa0cbfc
+-- hash: c4c4f1c6d3557d427ccdd8fce4d106752a50df81dc228bc63b82d202c0177d1c
 
 name:           hcoord-irish
-version:        2.0.0
+version:        2.1.0
 synopsis:       Short synopsis.
 description:    Longer description.
 category:       geography
@@ -20,7 +20,7 @@ tested-with:    GHC == 8.2.2
 build-type:     Simple
 cabal-version:  >= 1.10
 extra-source-files:
-    package.yaml
+    package.dhall
     README.md
 
 source-repository head
@@ -53,7 +53,7 @@ test-suite hcoord-irish-test
   hs-source-dirs:
       test
       src
-  ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -Wall
   build-depends:
       HUnit
     , base >=4 && <5
@@ -73,5 +73,7 @@ test-suite hlint-test
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4 && <5
+    , hcoord
     , hlint
+    , mtl
   default-language: Haskell2010

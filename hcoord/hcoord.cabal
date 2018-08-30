@@ -1,11 +1,11 @@
--- This file has been generated from package.yaml by hpack version 0.28.2.
+-- This file has been generated from package.dhall by hpack version 0.28.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 1d7606989936ee3d1e45348c4c7c7e434a437258a5934ec27caddb2f1638be05
+-- hash: 6d4fb02b9e9597704711c9935e21e0089a54bceeac9b36cdf4cfaf3eb0471958
 
 name:           hcoord
-version:        2.0.0
+version:        2.1.0
 synopsis:       Short synopsis.
 description:    Longer description.
 category:       geography
@@ -20,7 +20,7 @@ tested-with:    GHC == 8.2.2
 build-type:     Simple
 cabal-version:  >= 1.10
 extra-source-files:
-    package.yaml
+    package.dhall
     README.md
 
 source-repository head
@@ -64,7 +64,7 @@ test-suite hcoord-test
   hs-source-dirs:
       test
       src
-  ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -Wall
   build-depends:
       HUnit
     , base >=4 && <5
@@ -84,4 +84,5 @@ test-suite hlint-test
   build-depends:
       base >=4 && <5
     , hlint
+    , mtl
   default-language: Haskell2010

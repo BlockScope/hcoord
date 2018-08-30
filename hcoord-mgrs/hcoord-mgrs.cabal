@@ -1,11 +1,11 @@
--- This file has been generated from package.yaml by hpack version 0.28.2.
+-- This file has been generated from package.dhall by hpack version 0.28.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ce92db7f07524a12d4cb41315cbb1196b5594a5e22f6e3e002785ff5f9fc2dff
+-- hash: c978fa0c03892989ac165c80d96d64b2fd34e695a12fda13fe7648b973fd7814
 
 name:           hcoord-mgrs
-version:        2.0.0
+version:        2.1.0
 synopsis:       Short synopsis.
 description:    Longer description.
 category:       geography
@@ -20,7 +20,7 @@ tested-with:    GHC == 8.2.2
 build-type:     Simple
 cabal-version:  >= 1.10
 extra-source-files:
-    package.yaml
+    package.dhall
     README.md
 
 source-repository head
@@ -55,7 +55,7 @@ test-suite hcoord-mgrs-test
   hs-source-dirs:
       test
       src
-  ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -Wall
   build-depends:
       HUnit
     , base >=4 && <5
@@ -77,5 +77,9 @@ test-suite hlint-test
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4 && <5
+    , hcoord
+    , hcoord-utm
     , hlint
+    , mtl
+    , regex-pcre
   default-language: Haskell2010

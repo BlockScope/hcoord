@@ -3,10 +3,12 @@ module Cmd (buildRules, testRules, lintRules) where
 import Development.Shake
     ( Rules
     , CmdOption(Shell)
+    , (%>)
     , phony
     , cmd
     , need
     )
+import Development.Shake.FilePath ((<.>), (</>))
 
 prefix :: String -> String -> String
 prefix prefix' s = prefix' ++ s
@@ -31,6 +33,21 @@ pkgs =
     , "hcoord-mgrs"
     , "hcoord-osgb"
     ] 
+
+format :: String -> Rules ()
+format x =
+    phony ("dhall-format-" ++ x)
+    $ cmd Shell ("__shake-build/dhall format --inplace " ++ (x </> "package.dhall"))
+
+hpack :: String -> Rules ()
+hpack x =
+    phony ("hpack-dhall-" ++ x) $ do
+        need ["dhall-format-" ++ x]
+        cmd Shell ("__shake-build/hpack-dhall " ++ x)
+
+cabal :: String -> Rules ()
+cabal x =
+    x </> x <.> "cabal" %> \_ -> need ["hpack-dhall-" ++ x]
 
 -- | The pairs are names of the pkg and test.
 testPkgs :: [(Pkg, Test)]
@@ -67,5 +84,12 @@ buildRule s =
 
 buildRules :: Rules ()
 buildRules = do
-    _ <- sequence_ $ buildRule <$> pkgs
+    sequence_ $ format <$> pkgs
+    sequence_ $ hpack <$> pkgs
+    sequence_ $ cabal <$> pkgs
+    phony "dhall-format" $ need $ (\x -> "dhall-format-" ++ x) <$> pkgs
+    phony "hpack-dhall" $ need $ (\x -> "hpack-dhall-" ++ x) <$> pkgs
+    phony "cabal-files" $ need $ (\x -> x </> x <.> "cabal") <$> pkgs
+    
+    sequence_ $ buildRule <$> pkgs
     phony "pkgs" $ need pkgs
