@@ -1,8 +1,10 @@
--- This file has been generated from package.dhall by hpack version 0.28.2.
+cabal-version: 1.12
+
+-- This file has been generated from package.dhall by hpack version 0.31.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c978fa0c03892989ac165c80d96d64b2fd34e695a12fda13fe7648b973fd7814
+-- hash: f31d77717902fa390e397f2388c3301753a2d9e0692790e60cd19eba919b807e
 
 name:           hcoord-mgrs
 version:        2.1.0
@@ -18,7 +20,6 @@ license:        BSD3
 license-file:   LICENSE
 tested-with:    GHC == 8.2.2
 build-type:     Simple
-cabal-version:  >= 1.10
 extra-source-files:
     package.dhall
     README.md

@@ -1,4 +1,4 @@
-    let defs = ./defaults.dhall
+    let defs = ./../defaults.dhall
 
 in    defs
     ⫽ { name =
@@ -8,7 +8,7 @@ in    defs
       , library =
           { source-dirs = "src", exposed-modules = "UTMRef" }
       , tests =
-            ./default-tests.dhall
+            ./../default-tests.dhall
           ⫽ { hcoord-utm-test =
                 { dependencies =
                     [ "HUnit", "ieee754", "data-default" ]

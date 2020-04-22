@@ -1,8 +1,10 @@
--- This file has been generated from package.dhall by hpack version 0.28.2.
+cabal-version: 1.12
+
+-- This file has been generated from package.dhall by hpack version 0.31.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e96a91856122a3e30a25a528fdd2fb3722bc0f32f8e49b3880340473b6fc657b
+-- hash: 0e55d830d3d69d4ef36e32488a76b991c9bc770dd7038db905314841106d4dad
 
 name:           hcoord-osgb
 version:        2.1.0
@@ -18,7 +20,6 @@ license:        BSD3
 license-file:   LICENSE
 tested-with:    GHC == 8.2.2
 build-type:     Simple
-cabal-version:  >= 1.10
 extra-source-files:
     package.dhall
     README.md
