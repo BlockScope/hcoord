@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ed1721bb3666fe272085a0432368b5e40e6b2263ffb7575b7524362ce79bdc1c
+-- hash: d93487fa9c424160062cc2abc4fd5d96df795034e23b7d9b308c31b3f4bc074e
 
 name:           hcoord-mgrs
 version:        2.1.0
@@ -18,7 +18,7 @@ maintainer:     dfrancesconi12@gmail.com
 copyright:      copyleft
 license:        BSD3
 license-file:   LICENSE
-tested-with:    GHC == 8.2.2
+tested-with:    GHC == 8.0.2, GHC == 8.2.2, GHC == 8.4.4, GHC == 8.6.5, GHC == 8.8.3
 build-type:     Simple
 extra-source-files:
     package.dhall

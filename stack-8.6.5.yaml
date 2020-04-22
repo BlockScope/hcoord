@@ -1,5 +1,4 @@
 resolver: lts-14.27
-tested-with: GHC == 8.6.5
 flags:
     hcoord:
         suppress-failing-tests: true

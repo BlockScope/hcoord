@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 6fc1b7fbe5a9b231061a34620c91445b078049f47cd28b50407d873d41c7275f
+-- hash: 4f533db32237e63ccac4eedbc74aefc0059edc35c7a6ec20a5e2e199cc74cb32
 
 name:           hcoord-osgb
 version:        2.1.0
@@ -18,7 +18,7 @@ maintainer:     dfrancesconi12@gmail.com
 copyright:      copyleft
 license:        BSD3
 license-file:   LICENSE
-tested-with:    GHC == 8.2.2
+tested-with:    GHC == 8.0.2, GHC == 8.2.2, GHC == 8.4.4, GHC == 8.6.5, GHC == 8.8.3
 build-type:     Simple
 extra-source-files:
     package.dhall

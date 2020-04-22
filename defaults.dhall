@@ -18,8 +18,7 @@
     "Longer description."
 , category =
     "geography"
-, tested-with =
-    "GHC == 8.2.2"
+, tested-with = "GHC == 8.0.2, GHC == 8.2.2, GHC == 8.4.4, GHC == 8.6.5, GHC == 8.8.3"
 , extra-source-files =
     [ "package.dhall", "README.md" ]
 , ghc-options =
