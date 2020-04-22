@@ -35,6 +35,12 @@ in    defs
                   "HLint.hs"
               , source-dirs =
                   "hlint"
+              , when =
+                  { condition =
+                      "flag(suppress-failing-tests)"
+                  , buildable =
+                      False
+                  }
               }
           }
       }

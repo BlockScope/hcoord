@@ -2,5 +2,5 @@
 
 #set +v
 
-stack install build-hcoord
+stack install build-hcoord --stack-yaml=stack-build.yaml
 build-hcoord $@

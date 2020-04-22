@@ -12,6 +12,7 @@ flags:
     hcoord-osgb:
         suppress-failing-tests: true
 packages:
+- build
 - hcoord
 - hcoord-utm
 - hcoord-irish

@@ -1,5 +1,5 @@
-resolver: lts-15.9
-tested-with: GHC == 8.8.3
+resolver: lts-12.16
+tested-with: GHC == 8.4.4
 flags:
     hcoord:
         suppress-failing-tests: true
@@ -17,3 +17,4 @@ packages:
 - hcoord-irish
 - hcoord-mgrs
 - hcoord-osgb
+work-dir: .stack-work-ghc844

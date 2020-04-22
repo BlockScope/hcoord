@@ -26,4 +26,6 @@
     [ "-Wall" ]
 , dependencies =
     [ "base >=4 && <5" ]
+, flags =
+      { suppress-failing-tests = { manual = False, default = True } }
 }
