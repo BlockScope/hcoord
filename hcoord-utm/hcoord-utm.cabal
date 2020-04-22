@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7934f70a7cdf83c3ebcc19949a621ffbfdf81bb336a97f6266b6bbc35b176396
+-- hash: f7e5898dc3a905b245510e6b88c4dec8d37b915b653a407e91f392e482f3ad6b
 
 name:           hcoord-utm
 version:        2.1.0
@@ -18,7 +18,7 @@ maintainer:     dfrancesconi12@gmail.com
 copyright:      copyleft
 license:        BSD3
 license-file:   LICENSE
-tested-with:    GHC == 8.0.2, GHC == 8.2.2, GHC == 8.4.4, GHC == 8.6.5, GHC == 8.8.3
+tested-with:    GHC == 8.2.2, GHC == 8.4.4, GHC == 8.6.5, GHC == 8.8.3
 build-type:     Simple
 extra-source-files:
     package.dhall

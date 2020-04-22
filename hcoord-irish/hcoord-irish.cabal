@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 922b6618bbe527886ccfd8d2c62342ecb1b4ad26d4e824b6079d96d1c12eaeb7
+-- hash: 1beaf78fbed192e242a58277db47119cc52ab50816d8ce827e20e94792843334
 
 name:           hcoord-irish
 version:        2.1.0
@@ -18,7 +18,7 @@ maintainer:     dfrancesconi12@gmail.com
 copyright:      copyleft
 license:        BSD3
 license-file:   LICENSE
-tested-with:    GHC == 8.0.2, GHC == 8.2.2, GHC == 8.4.4, GHC == 8.6.5, GHC == 8.8.3
+tested-with:    GHC == 8.2.2, GHC == 8.4.4, GHC == 8.6.5, GHC == 8.8.3
 build-type:     Simple
 extra-source-files:
     package.dhall
