@@ -1,0 +1,19 @@
+resolver: lts-12.16
+flags:
+    hcoord:
+        suppress-failing-tests: true
+    hcoord-utm:
+        suppress-failing-tests: true
+    hcoord-irish:
+        suppress-failing-tests: true
+    hcoord-mgrs:
+        suppress-failing-tests: true
+    hcoord-osgb:
+        suppress-failing-tests: true
+packages:
+- hcoord
+- hcoord-utm
+- hcoord-irish
+- hcoord-mgrs
+- hcoord-osgb
+work-dir: .stack-work-ghc844

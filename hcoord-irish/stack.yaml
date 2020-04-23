@@ -1,8 +1,0 @@
-resolver: lts-7.14
-packages:
-- '.'
-- location: ../hcoord
-  extra-dep: true
-extra-deps: []
-flags: {}
-extra-package-dbs: []

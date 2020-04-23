@@ -2,7 +2,5 @@
 
 #set +v
 
-pushd build
-stack build --copy-bins
-popd
-__shake-build/build-hcoord $@
+stack install build-hcoord --stack-yaml=stack-build.yaml
+build-hcoord $@
